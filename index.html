@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yang Xie — Embedded Systems</title>
+    <meta name="description" content="Yang Xie — Embedded firmware, ultra‑low‑power RF sensing, SiC/GaN power electronics. Two commercial products shipped (10k+ units, 0 field failures)." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="branding">
+            <h1 class="name">Yang Xie <span class="pronunciation">(shay)</span></h1>
+            <p class="tag">Embedded Firmware • Ultra‑Low‑Power RF Sensing• RF Energy Harvesting• SiC/GaN Power Electronics</p>
+            <div class="contact">
+              <a href="mailto:yang.xie.2@stonybrook.edu" class="contact-link">
+                <span class="contact-icon">✉</span>
+                <span>yang.xie.2@stonybrook.edu</span>
+              </a>
+              <!-- <a href="tel:+16318205957" class="contact-link">
+                <span class="contact-icon">📞</span>
+                <span>+1‑631‑820‑5957</span>
+              </a> -->
+              <span class="location">
+                <span class="contact-icon">📍</span>
+                <span>Stony Brook, NY</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="nav-inner">
+            <a href="#summary">Summary</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="summary" class="hero card">
+        <div class="hero-content">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            Computer Engineering PhD candidate specializing in embedded firmware, ultra‑low‑power RF sensing, and SiC/GaN power electronics, with end‑to‑end embedded system design and productization experience. Led two commercial products to market (10k+ units shipped, 0 field failures), bringing 7+ years of automotive industry experience in system architecture and data science.
+          </p>
+          <div class="chips">
+            <span class="chip">C/C++ • FreeRTOS</span>
+            <span class="chip">Drivers (SPI/I2C/UART/CAN)</span>
+            <span class="chip">Bootloader/OTA</span>
+            <span class="chip">Yocto • BSP</span>
+            <span class="chip">Board Bring‑up</span>
+            <span class="chip">SiC/GaN • EMI</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="card">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Embedded Systems & Firmware</h3>
+            <ul>
+              <li>C/C++, FreeRTOS, bare‑metal, ISRs/DMA, timers, multitasking.</li>
+              <li>Device drivers (SPI, I2C, UART, CAN, Ethernet), bootloader/OTA (DFU), watchdog/fail‑safe.</li>
+              <li>Embedded Linux: Yocto Project, BSP bring‑up, device drivers, cross‑compilation, system integration.</li>
+              <li>Board bring‑up, JTAG/SWD, system debugging, FMEA.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>RF & Power</h3>
+            <ul>
+              <li>RF: Antenna design/tuning (HFSS), S‑parameters, impedance matching, SDR (GNU Radio).</li>
+              <li>SiC/GaN power electronics: gate driver/switching optimization, EMI mitigation, thermal.</li>
+              <li>Energy harvesting & PMICs: ultra‑low‑power rectifiers, storage optimization.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Systems & Tooling</h3>
+            <ul>
+              <li>Distributed systems, microservices (Spring Cloud), data pipelines (Flink), REST APIs.</li>
+              <li>Tooling: Git, PlatformIO, Docker/K8s, Jenkins CI/CD, Linux administration.</li>
+              <li>Python for testing/tooling; unit testing, SIL/HIL (where applicable).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="card">
+        <h2 class="section-title">Selected Commercial Products</h2>
+        <div class="grid">
+          <article class="project">
+            <div class="project-media">
+              <img src="assets/hvac-controller.jpg" alt="Smart HVAC Wi‑Fi/Zigbee Controller" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            </div>
+            <div class="project-body">
+              <h3>Smart HVAC Wi‑Fi/Zigbee Controller</h3>
+              <p class="meta">Sole Developer (End‑to‑End) • 2022 – Present</p>
+              <ul>
+                <li>Designed and commercialized a custom HVAC controller for <a href="https://www.hilife.sg/" target="_blank" rel="noopener noreferrer">hiLife (Singapore)</a> — ID/ME, hardware, firmware, production test, field support.</li>
+                <li>10,000+ units shipped with 0 reported field failures; programming/test fixtures and QC for scale.</li>
+                <li>Wi‑Fi/Zigbee control, robust driver stack, OTA DFU, fault‑tolerant control; low‑power standby and resilient connectivity.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-media">
+              <img src="assets/breath-analyzer.jpg" alt="Respiratory Infection Single‑Exhale Test Device" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            </div>
+            <div class="project-body">
+              <h3>Respiratory Infection Single‑Exhale Test Device</h3>
+              <p class="meta">Lead Architect/Developer • 2023 – Present</p>
+              <ul>
+                <li>30‑second breath analyzer for respiratory infections (COVID‑19, Influenza); three generations from prototype to pilot.</li>
+                <li>Embedded Linux (app/analytics/UI) + real‑time MCU (sensor/heater/flow control, data acquisition).</li>
+                <li>Integrated three biosensors (OSU <a href="https://mse.osu.edu/people/gouma.2" target="_blank" rel="noopener noreferrer">Prof. Gouma’s group</a>); device received FDA approval and is in clinical trials at <a href="https://wexnermedical.osu.edu/find-a-doctor/matthew-exline-md-16016" target="_blank" rel="noopener noreferrer">OSU Wexner Medical Center</a>.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="card">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="role has-company-logo">
+            <div class="role-content">
+              <img class="company-logo-left" src="assets/stony_brook.png" alt="Stony Brook University" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <div class="role-info">
+                <div class="role-header">
+                  <h3>Research Assistant — Stony Brook University</h3>
+                  <span>Jan 2022 – Present • Stony Brook, NY</span>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>Architected ultra‑low‑power RF backscatter sensing with harvested RF energy; antenna design, impedance matching, embedded firmware.</li>
+              <li>Modeled link budgets/energy availability; implemented stacks and sensing protocols for environmental/structural monitoring.</li>
+              <li>Developed SiC/GaN power modules and gate drivers for high‑frequency, high‑efficiency operation with improved EMI/thermal.</li>
+              <li>Integrated EMI‑based diagnostics for real‑time fault detection via electromagnetic signature analysis.</li>
+            </ul>
+            <div class="gallery">
+              <img src="assets/exp-sbu-1.jpg" alt="RF backscatter platform" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <img src="assets/exp-sbu-2.jpg" alt="SiC/GaN gate driver test" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            </div>
+          </div>
+          <div class="role has-company-logo">
+            <div class="role-content">
+              <img class="company-logo-left" src="assets/carbay_logo.png" alt="Carbay Information Technology" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <div class="role-info">
+                <div class="role-header">
+                  <h3>Data Scientist — Carbay Information Technology</h3>
+                  <span>Feb 2019 – Jan 2022 • Beijing, China</span>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>Led predictive modeling and market analytics across 10+ OEMs (Audi, JLR, Volvo, Lincoln) using deep learning/time‑series methods.</li>
+              <li>Delivered BI dashboards and KPI systems for dealer/network optimization; standardized data quality metrics and reporting.</li>
+            </ul>
+            <div class="gallery">
+              <img src="assets/exp-ds-1.jpg" alt="BI dashboard" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <img src="assets/exp-ds-2.jpg" alt="Forecasting pipeline" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            </div>
+          </div>
+          <div class="role has-company-logo">
+            <div class="role-content">
+              <img class="company-logo-left" src="assets/carbay_logo.png" alt="Carbay Information Technology" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <div class="role-info">
+                <div class="role-header">
+                  <h3>System Architect — Carbay Information Technology</h3>
+                  <span>Apr 2015 – Jan 2019 • Beijing, China</span>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>Led architecture and delivery of dealer operations (DMS), used‑car appraisal, ERP/ERM, and BI/automated reporting.</li>
+              <li>Established microservices and data platform (standardized APIs, auth/SSO, observability) with CI/CD for scalable, reliable releases.</li>
+              <li>Built ML‑driven used‑car price evaluation and market price monitoring with alerts and time‑series forecasting for pricing decisions.</li>
+            </ul>
+            <div class="gallery">
+              <img src="assets/exp-sa-1.jpg" alt="System architecture diagram" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <img src="assets/exp-sa-2.jpg" alt="Microservices dashboards" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            </div>
+          </div>
+          <div class="role has-company-logo">
+            <div class="role-content">
+              <img class="company-logo-left" src="assets/SWJTU.jpg" alt="Southwest Jiaotong University" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <div class="role-info">
+                <div class="role-header">
+                  <h3>Research Assistant — Southwest Jiaotong University</h3>
+                  <span>Sep 2012 – Jul 2015 • Chengdu, China</span>
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>Designed low‑power ZigBee edge nodes and gateways for rail freight and environmental monitoring.</li>
+              <li>Built edge‑based failure analysis with BP neural networks; developed a cloud‑native SaaS IoT platform on AWS.</li>
+            </ul>
+            <div class="gallery">
+              <img src="assets/exp-swjt-1.jpg" alt="WSN deployment" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+              <img src="assets/exp-swjt-2.jpg" alt="Edge gateway" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="card">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card light has-float">
+            <img class="edu-logo-float" src="assets/stony_brook.png" alt="Stony Brook University" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="edu-title">
+              <strong>Ph.D. — Electrical and Computer Engineering</strong>
+            </div>
+            <div class="edu-sub">
+              <span class="edu-school">The State University of New York at Stony Brook — Stony Brook, NY</span>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-date">Jan 2022 – May 2026 (Expected)</span>
+              <span class="badge">GPA 3.8/4.0</span>
+            </div>
+            <p class="edu-desc">Focus: Batteryless RF Sensing, Low‑Power and High‑Power Electronics, Embedded Diagnostics. Advisor: Milutin Stanacevic.</p>
+          </div>
+          <div class="edu-card light has-float">
+            <img class="edu-logo-float" src="assets/SWJTU.jpg" alt="Southwest Jiaotong University" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="edu-title">
+              <strong>M.Sc. — Measurement Technology and Instruments</strong>
+            </div>
+            <div class="edu-sub">
+              <span class="edu-school">Southwest Jiaotong University — Chengdu, China</span>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-date">Sep 2012 – Jul 2015</span>
+            </div>
+            <p class="edu-desc">Thesis: IoT and Cloud Computing based Monitoring System for Smart Agriculture.</p>
+          </div>
+          <div class="edu-card light has-float">
+            <img class="edu-logo-float" src="assets/SWJTU.jpg" alt="Southwest Jiaotong University" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="edu-title">
+              <strong>B.Sc. — Manufacturing Engineering</strong>
+            </div>
+            <div class="edu-sub">
+              <span class="edu-school">Southwest Jiaotong University — Chengdu, China</span>
+            </div>
+            <div class="edu-meta">
+              <span class="edu-date">Sep 2007 – Jul 2011</span>
+            </div>
+            <p class="edu-desc">Thesis: Embedded System based Internet of Things for Smart Home Applications.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="card">
+        <h2 class="section-title">Publications</h2>
+        <div class="publications-header">
+          <p>View my complete publication list on <a href="https://scholar.google.com/citations?user=ica0NJoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+        </div>
+        <details open>
+          <summary>Show/Hide Publications</summary>
+          <ol class="pubs">
+            <li>Xie, Y., Li, Y., Singh, M., Djurić, P. M., Das, S. R., & Stanacević, M. (2025, July). "Robust and energy-efficient channel estimation in RF backscatter tag-to-tag network." <em>IEEE Journal of Radio Frequency Identification</em>, pp. 1–12. IEEE.</li>
+            <li>Xie, Y., Li, Y., Ahmad, A., Sha, X., Djurić, P. M., Das, S. R., & Stanacević, M. (2025, June). "Channel Sensing Based Distance Estimation in Backscattering RF Tag Networks." In <em>2025 IEEE International Symposium on Circuits and Systems (ISCAS)</em> (pp. 1–6). IEEE.</li>
+            <li>Xie, Y., Li, Y., Djurić, P. M., Das, S. R., & Stanacević, M. (2024, July). "Optimized Channel Phase Estimation in Passive RF Tag Network." In <em>2024 IEEE International Conference on RFID (RFID)</em> (pp. 1–6). IEEE.</li>
+            <li>Ahmad, A., Singh, M., Xie, Y., Sha, X., Stanacević, M., Das, S. R., & Djurić, P. M. (2025). "Improving Communication Performance of Passive Backscattering Tags Using Collaborative Backscatter." In <em>2025 IEEE International Conference on RFID (RFID)</em> (pp. 1–6). IEEE.</li>
+            <li>Pereira, M., Ahmad, A., Xie, Y., Song, Y., Sha, X., Djurić, P., Stanacević, M., & Das, S. R. (2024). "A Novel Passive Embeddable RF Sensor for Structural Health Monitoring." In <em>Sensors and Smart Structures Technologies for Civil, Mechanical, and Aerospace Systems</em>.</li>
+            <li>Eng, K. X., Xie, Y., Pereira, M., Haas, Z. J., Das, S. R., Djurić, P. M., Glisic, B., & Stanacević, M. (2024). "A Vision and Proof of Concept for New Approach to Monitoring for Safer Future Smart Transportation Systems." <em>Sensors</em>, 24(18), 6018.</li>
+            <li>Zheng, P., Sha, X., Arvind, D., Xie, Y., & Stanacević, M. (2023). "Ultra-low Fully Integrated NMOS LDO with Enhanced Load Regulation and Startup for RF Energy Harvesting Sensors." In <em>2023 IEEE 66th International Midwest Symposium on Circuits and Systems (MWSCAS)</em>.</li>
+            <li>Mirza, A. B., Xie, Y., Vala, S. S., & Luo, F. (2023). "Impact of PCB Parasitic Capacitance on Switching Transients in Split-Phase Inverter Utilizing TO-247 SiC Devices." In <em>2023 IEEE Energy Conversion Congress and Exposition (ECCE)</em> (pp. 5504–5509). IEEE.</li>
+            <li>Mirza, A. B., Castiblanco, A., Muneeb, A., Xie, Y., Vala, S. S., & Luo, F. (2025). "Impact of PCB Parasitic Capacitance on Switching Transients in Chopper and Half-Bridge Configurations Utilizing TO-247 SiC Devices." <em>IEEE Transactions on Industry Applications</em>.</li>
+            <li>Li, Y., Hassan, M., Wu, Y., Emon, A. I., Xie, Y., Deng, S., Luo, F., & Deshpande, A. (2023). "Design, Fabrication and Testing of 3.3 kV/200A SiC Half-bridge Power Module." In <em>2023 IEEE Applied Power Electronics Conference and Exposition (APEC)</em> (pp. 331–335). IEEE.</li>
+            <li>Li, Y., Mirza, A. B., Xie, Y., Deng, S., Vala, S. S., Luo, F., Feng, X., & Narumanchi, S. V. J. (2024). "State-of-the-art Medium-and High-voltage Silicon Carbide Power Modules, Challenges and Mitigation Techniques: A Review." <em>IEEE Transactions on Components, Packaging and Manufacturing Technology</em>, 14.</li>
+            <li>Onabola, O., Ma, Z., Xie, Y., Akera, B., Ibraheem, A., Xue, J., Liu, D., & Bengio, Y. (2021). "HBert+ BiasCorp: Fighting Racism on the Web." <em>arXiv preprint arXiv:2104.02242</em>.</li>
+          </ol>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Yang Xie. Built for GitHub Pages.</p>
+        <div class="socials">
+          <!-- Add your profiles -->
+          <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
