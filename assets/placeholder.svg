@@ -12,7 +12,7 @@
   </g>
   <g fill="#a8b3cf" font-family="Segoe UI, Roboto, Helvetica, Arial" text-anchor="middle">
     <text x="400" y="200" font-size="28">Project Image Placeholder</text>
-    <text x="400" y="235" font-size="16" fill="#7f8aa3">Replace with your photo in assets/</text>
+    <text x="400" y="235" font-size="16" fill="#7f8aa3">todo: upload project image/</text>
   </g>
   <g fill="#67e8f9">
     <circle cx="240" cy="160" r="4"/>
