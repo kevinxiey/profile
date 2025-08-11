@@ -132,3 +132,379 @@ details > summary { cursor: pointer; color: var(--link); }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 10px; }
 .gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 10px; border: 1px solid var(--border); background: #0b0d12; }
 
+/* Role layout for left-right arrangement */
+.role.with-carousel .role-layout {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 15px;
+}
+
+.role-text {
+  padding-left: 20px;
+  padding-right: 15px;
+}
+
+.role-text ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.role-media {
+  margin: 0;
+  min-width: 0; /* Prevent overflow */
+}
+
+.role-media .project-media {
+  margin: 0;
+}
+
+.role-media .swiper-container {
+  width: 100%;
+}
+
+/* Swiper Container */
+.swiper-container { position: relative; overflow: hidden; border-radius: 12px; }
+.device-carousel, .hvac-carousel, .system-carousel, .data-carousel, .ra-carousel { width: 100%; height: 320px; border-radius: 12px; overflow: hidden; }
+.swiper-slide { position: relative; }
+.swiper-slide img { width: 100%; height: 320px; object-fit: contain; display: block; transition: transform 0.3s ease; background: var(--bg-secondary); }
+.swiper-slide:hover img { transform: scale(1.02); }
+.swiper-slide a { display: block; position: relative; text-decoration: none; }
+
+/* Slide captions */
+.slide-caption { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); 
+  color: #ffffff; 
+  padding: 20px 16px 12px; 
+  font-size: 13px; 
+  font-weight: 500; 
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Swiper Navigation - Match GLightbox Style */
+.swiper-button-next, .swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  background: rgba(0,0,0,0.5);
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  opacity: 0.8;
+}
+
+/* Hide default arrows and add custom SVG icons */
+.swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
+}
+
+/* Custom SVG arrow icons */
+.swiper-button-prev::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 6l-6 6 6 6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.swiper-button-next::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6l6 6-6 6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: rgba(0,0,0,0.8);
+  border-color: rgba(255,255,255,0.6);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.swiper-button-prev { left: 16px; }
+.swiper-button-next { right: 16px; }
+
+/* Swiper Pagination */
+.swiper-pagination {
+  bottom: 16px !important;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.3);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.swiper-pagination-bullet:hover {
+  background: rgba(255,255,255,0.7);
+  transform: scale(1.2);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 12px rgba(103,232,249,0.6);
+}
+
+/* GLightbox Custom Styles */
+.glightbox-clean .gclose,
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+  background: rgba(0,0,0,0.8) !important;
+  border: 2px solid rgba(255,255,255,0.3) !important;
+  border-radius: 50% !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  color: white !important;
+}
+
+.glightbox-clean .gclose:hover,
+.glightbox-clean .gnext:hover,
+.glightbox-clean .gprev:hover {
+  background: rgba(0,0,0,0.95) !important;
+  border-color: rgba(255,255,255,0.6) !important;
+}
+
+.glightbox-clean .gclose:focus {
+  transform: none !important;
+}
+
+.glightbox-clean .gnext:focus,
+.glightbox-clean .gprev:focus {
+  transform: translateY(-50%) !important;
+}
+
+.glightbox-clean .gclose:active {
+  transform: none !important;
+}
+
+.glightbox-clean .gnext:active,
+.glightbox-clean .gprev:active {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  transition: none !important;
+}
+
+.glightbox-clean .gclose {
+  width: 50px !important;
+  height: 50px !important;
+  top: 30px !important;
+  right: 30px !important;
+  position: fixed !important;
+}
+
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+  width: 60px !important;
+  height: 60px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  position: fixed !important;
+}
+
+.glightbox-clean .gprev {
+  left: 30px !important;
+}
+
+.glightbox-clean .gnext {
+  right: 30px !important;
+}
+
+/* Alternative selectors for GLightbox buttons */
+.gclose,
+.gnext,
+.gprev {
+  background: rgba(0,0,0,0.8) !important;
+  border: 2px solid rgba(255,255,255,0.3) !important;
+  border-radius: 50% !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+  color: white !important;
+}
+
+.gclose:hover,
+.gnext:hover,
+.gprev:hover {
+  background: rgba(0,0,0,0.95) !important;
+  border-color: rgba(255,255,255,0.6) !important;
+}
+
+.gclose:focus {
+  transform: none !important;
+}
+
+.gnext:focus,
+.gprev:focus {
+  transform: translateY(-50%) !important;
+}
+
+.gclose:active {
+  transform: none !important;
+}
+
+.gnext:active,
+.gprev:active {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  transition: none !important;
+}
+
+.gclose {
+  width: 50px !important;
+  height: 50px !important;
+  top: 30px !important;
+  right: 30px !important;
+  position: fixed !important;
+}
+
+.gnext,
+.gprev {
+  width: 60px !important;
+  height: 60px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  position: fixed !important;
+}
+
+.gprev {
+  left: 30px !important;
+}
+
+.gnext {
+  right: 30px !important;
+}
+
+/* Ensure image container doesn't exceed 80% */
+.glightbox-clean .gslide-media {
+  max-width: 80vw !important;
+  max-height: 80vh !important;
+}
+
+.glightbox-clean .gslide-image img {
+  max-width: 80vw !important;
+  max-height: 80vh !important;
+  object-fit: contain !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .device-carousel, .hvac-carousel, .system-carousel, .data-carousel, .ra-carousel { height: 280px; }
+  .swiper-slide img { height: 280px; }
+  
+  /* Mobile layout - stack vertically */
+  .role.with-carousel .role-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .role-text {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+
+/* Tablet responsive - medium screens */
+@media (max-width: 900px) and (min-width: 601px) {
+  .role.with-carousel .role-layout {
+    grid-template-columns: 2fr 3fr;
+    gap: 25px;
+  }
+  
+  .role-text {
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    width: 42px;
+    height: 42px;
+    margin-top: -21px;
+  }
+  
+  .swiper-button-prev::before, .swiper-button-next::before {
+    font-size: 20px;
+  }
+  
+  .swiper-button-prev { left: 12px; }
+  .swiper-button-next { right: 12px; }
+  
+  .slide-caption { 
+    font-size: 12px; 
+    padding: 16px 12px 10px; 
+  }
+  
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+  
+  /* Mobile GLightbox styles */
+  .glightbox-clean .gclose,
+  .gclose {
+    width: 45px !important;
+    height: 45px !important;
+    top: 15px !important;
+    right: 15px !important;
+  }
+  
+  .glightbox-clean .gnext,
+  .glightbox-clean .gprev,
+  .gnext,
+  .gprev {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .glightbox-clean .gprev,
+  .gprev {
+    left: 15px !important;
+  }
+  
+  .glightbox-clean .gnext,
+  .gnext {
+    right: 15px !important;
+  }
+  
+  .glightbox-clean .gslide-media {
+    max-width: 90vw !important;
+    max-height: 70vh !important;
+  }
+  
+  .glightbox-clean .gslide-image img {
+    max-width: 90vw !important;
+    max-height: 70vh !important;
+  }
+}
+

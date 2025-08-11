@@ -6,6 +6,10 @@
     <title>Yang Xie — Embedded Systems</title>
     <meta name="description" content="Yang Xie — Embedded firmware, ultra‑low‑power RF sensing, SiC/GaN power electronics. Two commercial products shipped (10k+ units, 0 field failures)." />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- GLightbox CSS for image popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/css/glightbox.min.css" />
   </head>
   <body>
     <header class="site-header">
@@ -98,8 +102,41 @@
         <h2 class="section-title">Selected Commercial Products</h2>
         <div class="grid">
           <article class="project">
-            <div class="project-media">
-              <img src="assets/hvac-controller.jpg" alt="Smart HVAC Wi‑Fi/Zigbee Controller" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="project-media swiper-container">
+              <!-- Swiper -->
+              <div class="swiper hvac-carousel">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="assets/hvac/hvac-01.png" class="glightbox" data-gallery="hvac-gallery" data-title="HVAC Controller - Circuit Board" data-description="Custom PCB design with Wi-Fi/Zigbee connectivity and power management">
+                      <img src="assets/hvac/hvac-01.png" alt="Smart HVAC Controller - Circuit Board" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Circuit Board Design</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/hvac/hvac-02.png" class="glightbox" data-gallery="hvac-gallery" data-title="HVAC Controller - Assembled Unit" data-description="Complete assembled controller with enclosure and connectors">
+                      <img src="assets/hvac/hvac-02.png" alt="Smart HVAC Controller - Assembled Unit" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Assembled Unit</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/hvac/hvac-03.png" class="glightbox" data-gallery="hvac-gallery" data-title="HVAC Controller - Programming Module" data-description="Custom programming and debugging module for firmware flashing and system diagnostics">
+                      <img src="assets/hvac/hvac-03.png" alt="Smart HVAC Controller - Programming Module" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Programming & Debug Module</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/hvac/hvac-04.png" class="glightbox" data-gallery="hvac-gallery" data-title="HVAC Controller - Mobile App" data-description="Mobile application interface for remote control and monitoring">
+                      <img src="assets/hvac/hvac-04.png" alt="Smart HVAC Controller - Mobile App" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Mobile App Interface</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
             <div class="project-body">
               <h3>Smart HVAC Wi‑Fi/Zigbee Controller</h3>
@@ -112,8 +149,47 @@
             </div>
           </article>
           <article class="project">
-            <div class="project-media">
-              <img src="assets/breath-analyzer.jpg" alt="Respiratory Infection Single‑Exhale Test Device" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="project-media swiper-container">
+              <!-- Swiper -->
+              <div class="swiper device-carousel">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="assets/breath/breathanalyzer-G0-01.png" class="glightbox" data-gallery="device-gallery" data-title="Generation 1 - Prototype" data-description="First prototype of the respiratory infection test device">
+                      <img src="assets/breath/breathanalyzer-G0-01.png" alt="Respiratory Infection Test Device - Generation 1" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Generation 1 - Prototype</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/breath/breathanalyzer-G1-02.jpg" class="glightbox" data-gallery="device-gallery" data-title="Generation 2 - Alpha Version" data-description="Alpha version with improved sensors and design">
+                      <img src="assets/breath/breathanalyzer-G1-02.jpg" alt="Respiratory Infection Test Device - Generation 2" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Generation 2 - Alpha Version</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/breath/breathanalyzer-G1-01.png" class="glightbox" data-gallery="device-gallery" data-title="Generation 2 - Clinical Testing" data-description="Clinical testing phase with refined hardware">
+                      <img src="assets/breath/breathanalyzer-G1-01.png" alt="Respiratory Infection Test Device - Generation 2" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Generation 2 - Clinical Testing</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/breath/breathanalyzer-G2-01.png" class="glightbox" data-gallery="device-gallery" data-title="Generation 3 - Production Ready" data-description="Production-ready device handheld form factor">
+                      <img src="assets/breath/breathanalyzer-G2-01.png" alt="Respiratory Infection Test Device - Generation 3" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">Generation 3 - Production Ready</div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="assets/breath/breathanalyzer-ios-app.png" class="glightbox" data-gallery="device-gallery" data-title="iPhone App - Mobile Interface" data-description="Mobile application interface for device control and visualization">
+                      <img src="assets/breath/breathanalyzer-ios-app.png" alt="Respiratory Infection Test Device - iPhone App" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                      <div class="slide-caption">iPhone App - Mobile Interface</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
             <div class="project-body">
               <h3>Respiratory Infection Single‑Exhale Test Device</h3>
@@ -121,7 +197,7 @@
               <ul>
                 <li>30‑second breath analyzer for respiratory infections (COVID‑19, Influenza); three generations from prototype to pilot.</li>
                 <li>Embedded Linux (app/analytics/UI) + real‑time MCU (sensor/heater/flow control, data acquisition).</li>
-                <li>Integrated three biosensors (OSU <a href="https://mse.osu.edu/people/gouma.2" target="_blank" rel="noopener noreferrer">Prof. Gouma’s group</a>); device received FDA approval and is in clinical trials at <a href="https://wexnermedical.osu.edu/find-a-doctor/matthew-exline-md-16016" target="_blank" rel="noopener noreferrer">OSU Wexner Medical Center</a>.</li>
+                <li>Integrated three biosensors (OSU <a href="https://mse.osu.edu/people/gouma.2" target="_blank" rel="noopener noreferrer">Prof. Gouma's group</a>); device received FDA approval and is in clinical trials at <a href="https://wexnermedical.osu.edu/find-a-doctor/matthew-exline-md-16016" target="_blank" rel="noopener noreferrer">OSU Wexner Medical Center</a>.</li>
               </ul>
             </div>
           </article>
@@ -131,7 +207,7 @@
       <section id="experience" class="card">
         <h2 class="section-title">Professional Experience</h2>
         <div class="timeline">
-          <div class="role has-company-logo">
+          <div class="role has-company-logo with-carousel">
             <div class="role-content">
               <img class="company-logo-left" src="assets/stony_brook.png" alt="Stony Brook University" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
               <div class="role-info">
@@ -141,18 +217,74 @@
                 </div>
               </div>
             </div>
-            <ul>
-              <li>Architected ultra‑low‑power RF backscatter sensing with harvested RF energy; antenna design, impedance matching, embedded firmware.</li>
-              <li>Modeled link budgets/energy availability; implemented stacks and sensing protocols for environmental/structural monitoring.</li>
-              <li>Developed SiC/GaN power modules and gate drivers for high‑frequency, high‑efficiency operation with improved EMI/thermal.</li>
-              <li>Integrated EMI‑based diagnostics for real‑time fault detection via electromagnetic signature analysis.</li>
-            </ul>
-            <div class="gallery">
-              <img src="assets/exp-sbu-1.jpg" alt="RF backscatter platform" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
-              <img src="assets/exp-sbu-2.jpg" alt="SiC/GaN gate driver test" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="role-layout">
+              <div class="role-text">
+                <ul>
+                  <li>Architected ultra‑low‑power RF backscatter sensing with harvested RF energy; antenna design, impedance matching, embedded firmware.</li>
+                  <li>Modeled link budgets/energy availability; implemented stacks and sensing protocols for environmental/structural monitoring.</li>
+                  <li>Developed SiC/GaN power modules and gate drivers for high‑frequency, high‑efficiency operation with improved EMI/thermal.</li>
+                  <li>Integrated EMI‑based diagnostics for real‑time fault detection via electromagnetic signature analysis.</li>
+                </ul>
+              </div>
+              <div class="role-media">
+                <div class="project-media swiper-container">
+                  <!-- Swiper for Research Assistant -->
+                  <div class="swiper ra-carousel">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="assets/RA/RF_TAG-01.png" class="glightbox" data-gallery="ra-gallery" data-title="RF Backscatter Tag PCB" 
+                        data-description="RF backscatter sensing tag with antenna design and multi-impedance modulator">
+                          <img src="assets/RA/RF_TAG-01.png" alt="RF Backscatter Tag PCB" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">RF Tag PCB Design</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/RA/RF_TAG-02.png" class="glightbox" data-gallery="ra-gallery" data-title="RF Backscatter Tag PCB" 
+                        data-description="RF backscatter sensing tag with antenna design and multi-impedance modulator">
+                          <img src="assets/RA/RF_TAG-02.png" alt="RF Backscatter Tag PCB" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">RF Tag PCB Design</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/RA/RF_TAG-03.png" class="glightbox" data-gallery="ra-gallery" data-title="RF Backscatter Tag PCB" 
+                        data-description="RF backscatter sensing tag with antenna design and multi-impedance modulator">
+                          <img src="assets/RA/RF_TAG-03.png" alt="RF Backscatter Tag PCB" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">RF Tag PCB Design</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/RA/RF_TAG-04.png" class="glightbox" data-gallery="ra-gallery" data-title="RF Backscatter Tag PCB" 
+                        data-description="RF backscatter sensing tag with antenna design and multi-impedance modulator">
+                          <img src="assets/RA/RF_TAG-04.png" alt="RF Backscatter Tag PCB" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">RF Tag PCB Design</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/RA/RF_TAG-05.png" class="glightbox" data-gallery="ra-gallery" data-title="RF Backscatter Tag PCB" 
+                        data-description="RF backscatter sensing tag with antenna design and multi-impedance modulator">
+                          <img src="assets/RA/RF_TAG-05.png" alt="RF Backscatter Tag PCB" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">RF Tag PCB Design</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/RA/RF_TAG-06.png" class="glightbox" data-gallery="ra-gallery" data-title="RF Backscatter Tag PCB" 
+                        data-description="RF backscatter sensing tag with antenna design and multi-impedance modulator">
+                          <img src="assets/RA/RF_TAG-06.png" alt="RF Backscatter Tag PCB" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">RF Tag PCB Design</div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination dots -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="role has-company-logo">
+          <div class="role has-company-logo with-carousel">
             <div class="role-content">
               <img class="company-logo-left" src="assets/carbay_logo.png" alt="Carbay Information Technology" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
               <div class="role-info">
@@ -162,16 +294,51 @@
                 </div>
               </div>
             </div>
-            <ul>
-              <li>Led predictive modeling and market analytics across 10+ OEMs (Audi, JLR, Volvo, Lincoln) using deep learning/time‑series methods.</li>
-              <li>Delivered BI dashboards and KPI systems for dealer/network optimization; standardized data quality metrics and reporting.</li>
-            </ul>
-            <div class="gallery">
-              <img src="assets/exp-ds-1.jpg" alt="BI dashboard" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
-              <img src="assets/exp-ds-2.jpg" alt="Forecasting pipeline" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="role-layout">
+              <div class="role-text">
+                <ul>
+                  <li>Led predictive modeling and market analytics across 10+ OEMs (Audi, JLR, Volvo, Lincoln) using deep learning/time‑series methods.</li>
+                  <li>Delivered BI dashboards and KPI systems for dealer/network optimization; standardized data quality metrics and reporting.</li>
+                </ul>
+              </div>
+              <div class="role-media">
+                <div class="project-media swiper-container">
+                  <!-- Swiper for Data Scientist -->
+                  <div class="swiper data-carousel">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="assets/data/data-01.png" class="glightbox" data-gallery="data-gallery" data-title="BI Dashboard Analytics" >
+                        <!-- data-description="Comprehensive business intelligence dashboard featuring real-time KPI tracking, dealer performance metrics, inventory analytics, and market trend visualization. Built with Python, Tableau, and SQL for 10+ automotive OEM brands including Audi, JLR, Volvo, and Lincoln."> -->
+                          <img src="assets/data/data-01.png" alt="BI Dashboard Analytics" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">BI Dashboard Analytics</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/data/data-02.png" class="glightbox" data-gallery="data-gallery" data-title="Predictive Modeling Pipeline">
+                           <!-- data-description="End-to-end machine learning pipeline implementing deep learning and time-series forecasting models. Features automated data ingestion, feature engineering, model training with TensorFlow/PyTorch, and production deployment with real-time inference capabilities for automotive market predictions."> -->
+                          <img src="assets/data/data-02.png" alt="Predictive Modeling Pipeline" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">Predictive Modeling Pipeline</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/data/data-03.png" class="glightbox" data-gallery="data-gallery" data-title="Time-Series Forecasting" >
+                        <!-- data-description="Advanced time-series forecasting system using LSTM, ARIMA, and Prophet models for automotive market prediction. Includes anomaly detection, seasonal decomposition, and automated alerting for pricing decisions across dealer networks. Achieved 85%+ accuracy in sales forecasting."> -->
+                          <img src="assets/data/data-03.png" alt="Time-Series Forecasting" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">Time-Series Forecasting</div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination dots -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="role has-company-logo">
+          <div class="role has-company-logo with-carousel">
             <div class="role-content">
               <img class="company-logo-left" src="assets/carbay_logo.png" alt="Carbay Information Technology" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
               <div class="role-info">
@@ -181,14 +348,49 @@
                 </div>
               </div>
             </div>
-            <ul>
-              <li>Led architecture and delivery of dealer operations (DMS), used‑car appraisal, ERP/ERM, and BI/automated reporting.</li>
-              <li>Established microservices and data platform (standardized APIs, auth/SSO, observability) with CI/CD for scalable, reliable releases.</li>
-              <li>Built ML‑driven used‑car price evaluation and market price monitoring with alerts and time‑series forecasting for pricing decisions.</li>
-            </ul>
-            <div class="gallery">
-              <img src="assets/exp-sa-1.jpg" alt="System architecture diagram" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
-              <img src="assets/exp-sa-2.jpg" alt="Microservices dashboards" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+            <div class="role-layout">
+              <div class="role-text">
+                <ul>
+                  <li>Led architecture and delivery of dealer operations (DMS), used‑car appraisal, ERP/ERM, and BI/automated reporting.</li>
+                  <li>Established microservices and data platform (standardized APIs, auth/SSO, observability) with CI/CD for scalable, reliable releases.</li>
+                  <li>Built ML‑driven used‑car price evaluation and market price monitoring with alerts and time‑series forecasting for pricing decisions.</li>
+                </ul>
+              </div>
+              <div class="role-media">
+                <div class="project-media swiper-container">
+                  <!-- Swiper for System Architect -->
+                  <div class="swiper system-carousel">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <a href="assets/system/system-01.png" class="glightbox" data-gallery="system-gallery" data-title="System Architecture - Overview" >
+                        <!-- data-description="Enterprise-scale system architecture featuring microservices design patterns, event-driven architecture, and distributed data management. Includes API gateway, service mesh, message queues (Kafka), and multi-region deployment across AWS/Azure cloud infrastructure supporting 10M+ daily transactions."> -->
+                          <img src="assets/system/system-01.png" alt="System Architecture Overview" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">System Architecture Overview</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/system/system-02.png" class="glightbox" data-gallery="system-gallery" data-title="Microservices Dashboard" >
+                        <!-- data-description="Comprehensive observability platform built with Prometheus, Grafana, and ELK stack. Features real-time monitoring of service health, latency metrics, error rates, distributed tracing, and automated alerting. Includes SLA tracking, capacity planning, and performance optimization insights across 50+ microservices."> -->
+                          <img src="assets/system/system-02.png" alt="Microservices Dashboard" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">Microservices Dashboard</div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a href="assets/system/system-03.png" class="glightbox" data-gallery="system-gallery" data-title="Data Platform Architecture" >
+                          <!-- data-description="Modern data platform architecture implementing data mesh principles with Apache Airflow, Spark, and Kafka. Features automated ETL/ELT pipelines, data lineage tracking, quality validation, and self-service analytics. Includes GitOps-based CI/CD with Jenkins, containerized deployments, and zero-downtime releases supporting petabyte-scale data processing."> -->
+                          <img src="assets/system/system-03.png" alt="Data Platform Architecture" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
+                          <div class="slide-caption">Data Platform Architecture</div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Pagination dots -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="role has-company-logo">
@@ -205,10 +407,6 @@
               <li>Designed low‑power ZigBee edge nodes and gateways for rail freight and environmental monitoring.</li>
               <li>Built edge‑based failure analysis with BP neural networks; developed a cloud‑native SaaS IoT platform on AWS.</li>
             </ul>
-            <div class="gallery">
-              <img src="assets/exp-swjt-1.jpg" alt="WSN deployment" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
-              <img src="assets/exp-swjt-2.jpg" alt="Edge gateway" onerror="this.onerror=null;this.src='assets/placeholder.svg'" />
-            </div>
           </div>
         </div>
       </section>
@@ -284,7 +482,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+        <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Yang Xie. Built for GitHub Pages.</p>
         <div class="socials">
@@ -295,7 +493,12 @@
       </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GLightbox JS for image popup -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    
     <script src="script.js"></script>
   </body>
-  </html>
+</html>
 
